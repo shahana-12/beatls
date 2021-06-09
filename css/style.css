@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+.title h1{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #353535;
+    line-height: 8px;
+}
+.title img{
+    margin-left: 46.8%;
+}
+
+/* ===================================================================================
+                                Header Part Start
+====================================================================================== */
+
+
+header{
+    background: #0872b9;
+    padding: 10px 0;
+}
+header .header-left p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+header .header-right{
+    text-align: right;
+}
+header .header-right a i{
+    color: white;
+    margin-left: 40px;
+    font-size: 16px;
+    transition: .5s;
+}
+header .header-right a i:hover{
+    color: #353535;
+}
+
+/* ===================================================================================
+                                Header Part end
+====================================================================================== */
+
+/* ===================================================================================
+                                Navbar Part Start
+====================================================================================== */
+.navbar{
+    z-index: 9999;
+    transition: .4s;
+}
+nav ul li {
+    padding: 5px 8px;
+
+}
+nav ul li a{
+    color: black !important;
+    font-size: 16px;
+    font-family: 'Myriad Pro' , sans-serif;
+    padding: 10px 0;
+    font-weight: 500;
+    transition: .5s;
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover{
+    color: #0872b9 !important;
+}
+.sticky{
+    background: #555555 !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+.sticky ul li a{
+    color:  white !important;
+}
+
+/* ===================================================================================
+                                Navbar Part end
+====================================================================================== */
+
+/* ===================================================================================
+                                Banner Part start
+====================================================================================== */
+
+#banner_part{
+    background: url(../images/banner.png) no-repeat center;
+    background-size: cover;
+}
+#banner_part .overlay{
+    background-color: rgba(0, 0, 0, .6);
+    height: 100%;
+    width: 100%;
+}
+#banner_part .overlay .banner_text{
+    text-align: right;
+    color: white;
+    padding:100px 0;
+}
+#banner_part .overlay .banner_text h3{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+}
+#banner_part .overlay .banner_text h1{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+#banner_part .overlay .banner_text p{
+    font-family: 'Open Sans', sans-serif;
+    width: 587px;
+    margin-left: 47%;
+    line-height: 30px;
+    padding-bottom: 25px;
+}
+#banner_part .overlay .banner_text a{
+    color: white;
+    border: 1px solid;
+    padding: 6px 22px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 20px;
+    transition: .5s;
+    background: transparent;
+}
+#banner_part .overlay .banner_text a:hover{
+    background-color: #0872b9;
+    border-color: #0872b9;
+}
+/* ===================================================================================
+                                Banner Part end
+====================================================================================== */
+
+/* ===================================================================================
+                                about Part start
+====================================================================================== */
+
+#about_part{
+    margin:80px 0;
+}
+#about_part .title{
+    margin:45px 0;
+}
+#about_part .about_text{
+    padding-left: 35px;
+}
+#about_part .about_text p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 33px;
+    color: #555555;
+}
+#about_part .about_text .top_text{
+    margin-bottom: 20px;
+    width: 665px;
+}
+#about_part .about_text .bottom_text{
+    width: 666px;
+}
+
+/* ===================================================================================
+                                about Part end
+====================================================================================== */
+
+/* ===================================================================================
+                                service Part start
+====================================================================================== */
+#service_part{
+    margin:100px 0;
+}
+#service_part .title img{
+    margin-left: 45.4%;
+}
+#service_part .item{
+    background-color: #f1f1f1;
+    margin-top: 100px;
+}
+#service_part .item:hover{
+    -webkit-box-shadow: -1px 1px 10px 1px rgba(115,111,115,1);
+    -moz-box-shadow: -1px 1px 10px 1px rgba(115,111,115,1);
+    box-shadow: -1px 1px 10px 1px rgba(115,111,115,1);
+}
+#service_part .item .round{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin:0 auto;
+    transform: translateY(-50%);
+    position: relative;
+}
+#service_part .item .round .border_round{
+    height: 90px;
+    width: 90px;
+    border: 1px solid #e4e4e4;
+    border-radius: 50%;
+    margin:0 auto;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+}
+#service_part .item:hover .round .border_round{
+    border: 1px solid #5bc5f4;
+}
+#service_part .item .round .border_round .round_inner{
+    height: 85px;
+    width: 85px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    margin:0 auto;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+}
+#service_part .item .round .border_round .round_inner img{
+    margin:0 auto;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+}
+#service_part .item:hover .round .border_round .round_inner{
+    background: #5bc5f4;
+}
+#service_part .item .item_text{
+    margin-top: -40px;
+}
+#service_part .item .item_text h3{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    color: #353535;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#service_part .item .item_text p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    color: #555555;
+    width: 333px;
+    text-align: center;
+    padding-left: 27px;
+    padding-bottom: 15px;
+}
+/* ===================================================================================
+                                service Part end
+====================================================================================== */
+
+/* ===================================================================================
+                                portfolio Part start
+====================================================================================== */
+#portfolio{
+    margin:100px 0;
+}
+#portfolio .title img{
+    margin-left: 44.9%;
+}
+#portfolio .port_item .port_img{
+    position: relative;
+    margin-top: 20px;
+}
+#portfolio .port_item .port_img img{
+    display: block;
+    width: 100%;
+}
+#portfolio .port_item .port_img .overlay{
+    height: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .4s;
+    opacity: 0;
+}
+#portfolio .port_item .port_img .overlay .port_round{
+    height: 50px;
+    width: 50px;
+    background-color: #5bc5f4;
+    border-radius: 50%;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+#portfolio .port_item .port_img .overlay .port_round img{
+    width: 50%;
+    margin: 0 auto;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    
+}
+#portfolio .port_item .port_img:hover .overlay{
+    height: 100%;
+    opacity: 1;
+}
+/* ===================================================================================
+                                portfolio Part end
+====================================================================================== */
+
+/* ===================================================================================
+                                team Part start
+====================================================================================== */
+#team_part{
+    margin:50px 0;
+}
+#team_part .member{
+    position: relative;
+    margin-top: 30px;
+}
+#team_part .member:hover{
+    box-shadow: 2px 2px 20px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 20px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 20px -1px rgba(0,0,0,0.75);
+}
+#team_part .member img{
+    width: 100%;
+    display: block;
+}
+#team_part .member .overlay{
+    height: 85%;
+    width: 0%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.486);
+    position: absolute;
+    transition: .5s;
+    opacity: 0;
+}
+#team_part .member .overlay .overicon{
+    margin-top: 50px;
+}
+#team_part .member .overlay .overicon a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid white;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#team_part .member .overlay .overicon a:hover{
+    background-color: #5bc5f4;
+    border: 1px solid #5bc5f4;
+}
+#team_part .member:hover .overlay{
+    width: 35%;
+    opacity: 1;
+}
+#team_part .member_details{
+    text-align: center;
+}
+#team_part .member_details h3{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    color: #353535;
+    padding-top: 8px;
+}
+#team_part .member:hover .member_details h3{
+    color: #5bc5f4;
+}
+#team_part .member_details h5{
+    color: #353535;
+    font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+/* ===================================================================================
+                                team Part end
+====================================================================================== */
+
+/* ===================================================================================
+                                testimonial Part start
+====================================================================================== */
+
+#testimonial .title{
+    margin:20px 0;
+}
+#testimonial .title img{
+    margin-left: 45.9%;
+}
+#testimonial .test_item{
+    margin-bottom: 100px;
+}
+#testimonial .test_item .item_img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    margin: 10px auto
+}
+#testimonial .test_item .item_img img{
+    width: 100%;
+}
+#testimonial .test_item .item_text{
+    width: 100%;
+    margin:50px 0;
+    position: relative;
+}
+#testimonial .test_item .item_text .test_round{
+    height: 110px;
+    width: 110px;
+    background-color: #f1f1f1;
+    margin:0 auto;
+    transform: rotate(40deg); 
+    
+}
+#testimonial .test_item .item_text .item-details{
+    width: 100%;
+    background-color: #f1f1f1;
+    position: absolute;
+    margin-top: -110px;
+    text-align: center;
+    padding:20px 0;
+    
+}
+#testimonial .test_item .item_text .item-details h3{
+    color: #353535;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+#testimonial .test_item .item_text .item-details h5{
+    color: #353535;
+    font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 16px;
+}
+#testimonial .test_item .item_text .item-details p{
+    font-family: 'Oswald', sans-serif;
+    margin-top: 10px;
+    width: 520px;
+    text-align: center;
+    padding-left: 50px;
+    line-height: 29px;
+}
+/* ===================================================================================
+                                testimonial Part end
+====================================================================================== */
+
+/* ===================================================================================
+                                footer Part start
+====================================================================================== */
+footer{
+    background-color: #353535;
+    margin-top: 50px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 25px;
+}
+footer .footer_logo{
+    padding-bottom: 42px;
+}
+
+footer .footer_logo img{
+    padding-bottom:20px;
+}
+footer .footer_logo p{
+    font-size: 14px;
+    width: 238px;
+    line-height: 25px;
+}
+footer .footer_logo .last_p{
+    margin-top: 20px;
+}
+footer .footer_contact h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+footer .footer_contact .footer_icon{
+    width: 100%;
+    margin-top: 12px;
+    display: flex;
+}
+footer .footer_contact .footer_icon .icon_box{
+    width: 20%;
+}
+footer .footer_contact .footer_icon .box_text{
+    width: 80%;
+}
+footer .footer_contact .footer_icon .icon_box i{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    background-color: #5bc5f4;
+    text-align: center;
+    margin-top: 7px;
+    font-size: 20px;
+}
+footer .footer_contact .footer_icon .box_text{
+    font-size: 14px;
+    line-height: 24px;
+}
+footer .footer_contact .footer_icon .box_text .number{
+    width: 130px;
+}
+footer .footer_links h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+footer .footer_links ul .first_li{
+    float: left;
+}
+footer .footer_links ul .next_li{
+    float: left;
+    margin-left: 20px;
+}
+footer .footer_links ul li{
+    margin-bottom: 20px;
+}
+footer .footer_links ul li a{
+    color: white;
+    font-size: 14px;
+    transition: .4s;
+}
+footer .footer_links ul li a:hover{
+    color: #5bc5f4;
+}
+footer .footer_photo h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+footer .footer_photo img{
+    width: 25%;
+    margin: 0 12px 12px 0;
+}
+/* ===================================================================================
+                                footer Part end
+====================================================================================== */
+
+/* ===================================================================================
+                                copyright Part start
+====================================================================================== */
+#copyright{
+    background-color: #555555;
+    color: white;
+    text-align: center;
+    padding:10px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+#copyright a{
+    color: #5bc5f4;
+}
+/* ===================================================================================
+                                copyright Part end
+====================================================================================== */
